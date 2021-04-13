@@ -1,163 +1,217 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<meta charset="utf-8" />
-<title>AnoGon</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Бесплатный HTML шаблон для сайта #1</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css"> 
+    <link rel="stylesheet" href="css/justified-nav.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+		 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script >
+		 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->  
+  </head>
 <body>
-<!--Создаём таблицу контейнер, которой задаём следующее
-оформление:
-border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
-align="center" - размещаем контейнер по центру экрана.
-rules="rows" - убираем двойную рамку.
-style="width:60%;" - добавляем стилевое свойства, делающее
-контейнер и весь сайт "резиновым".
-Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
-<table
-border="1"
-align="center"
-rules="rows"
-style="width:60%;">
-<!--Создаём строку-->
-<tr>
-<!--Создаём ячейку строки-->
-<td>
-<!--ШАПКА САЙТА-->
 
-<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
-Оформление:
-border="1" - двойная рамка толщиной в 1px
-background="images/168.png" - картинка в шапке сайта, если требуется.
-Адрес картинки вы должны вставить свой.
-bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
-cellpadding="10" - отступ содержимого от рамки не менее 10px.
-style="width:100%; border-radius:5px;" - добавляем "резиновость"
-и закругляем уголки рамки-->
-<table
-border="1"
-background="images/168.png"
-bgcolor="#7FFFD4"
-cellpadding="10"
-style="width:100%; border-radius:5px;">
-<!--Создаём строку таблицы-->
-<tr>
-<!--Создаём столбец таблицы-->
-<th>
-<!--Содержание ячейки столбца-->
-<h1>AnoGon</h1>
-<h3>---------------</h3>
-<!--Закрываем таблицу-->
-</th>
-</tr>
-</table>
+<section id="header">
 
-<!--ОСНОВНОЙ КОНТЕНТ-->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 logo">Ваш логотип</div>
+      <div class="col-md-6 text-right phone">8 (800) 555-35-35</div>
+    </div>
+  </div>
+</header>	
 
-<!--В этой же ячейке контейнера создаём ещё одну таблицу
-для основного контента.
-Оформление как и в предыдущей таблице-->
+<div class="container">
+<div class="row">
+  <nav>
+    <ul class="nav nav-justified">
+      <li class="active"><a href="#">Главная</a></li>
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Наши проекты</a></li>
+      <li><a href="#">Услуги</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+</div>
+</div>
 
-<table
-border="1"
-bgcolor="#e6e6fa"
-cellpadding="10"
-style="width:100%; border-radius:5px;">
-<!--Создаём строку-->
-<tr>
-<!--Создаём ячейку
-Оформление:
-rowspan="2" - объединяем две ячейки в одну.
-Число объединяемых ячеек по числу ячеек в сайдбаре.
-style="width:80%" - основной контент занимает 80% всей площади,
-оставшиеся 20% для сайдбара-->
-<td
-rowspan="2"
-style="width:80%">
-<h2>Страница</h2>
-<!--Начинаем абзац с красной строки-->
-<p style="text-indent:20px">
-Здравствуйте уважаемые будущие веб-мастера!
-Мне 55 лет и я рад приветствовать Вас на своём сайте.
-Этот сайт первый, который я разработал самостоятельно,
-а до этого умел только входить в интернет.</p>
+<section id="slider">
+  <div class="container">
+     <div class="row">
+     <div id="carousel-example-generic" class="carousel slide carousel-fade carousel-animate carousel-bg" data-ride="carousel">
 
-<p style="text-indent:20px">Почему я решил его сделать?
-За те 3 месяца, пока разбирался в
-сайтостроении и создавал этот ресурс обнаружилось,
-что авторы руководств по созданию
-сайтов считают многие нюансы само собой разумеющимися
-и не обращают на них внимание
-А мне, учитывая возраст и «опыт», было не просто
-понять как раз эти нюансы, они отнимали больше всего
-времени.</p>
-<!--Закрываем ячейку-->
-</td>
+     <ol class="carousel-indicators">
+       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+       <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+       <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+     </ol>
 
-<!--САЙДБАР-->
+     <div class="carousel-inner" role="listbox">
+       <div class="item active" style="background-image: url(images/slide_1.jpg)">
+         <div class="carousel-caption">
+           <div class="hero">
+             <hgroup class="zoomInDown animated">
+               <h2 class="fadeInLeft animated">Заголовок слайдера</h1>
+               <h3 class="slideInRight animated">Маленький заголовок слайдера</h3>
+             </hgroup>
+             <button class="btn btn-hero btn-lg bounceInUp animated" role="button">Кнопка</button>
+           </div>
+         </div>
+       </div>
+       <div class="item" style="background-image: url(images/slide_1.jpg)">
+         <div class="carousel-caption">
+           <div class="hero fadeInUp animated">
+           <hgroup>
+             <h2>Заголовок слайдера #2</h1>
+             <h3>Маленький заголовок слайдера #2</h3>
+           </hgroup>
+           <button class="btn btn-hero btn-lg zoomIn animated" role="button">Кнопка</button>
+           </div>
+         </div>
+       </div>
+       <div class="item" style="background-image: url(images/slide_1.jpg)">
+         <div class="carousel-caption">
+           <div class="hero rollIn animated">
+             <hgroup class="rotateInDownRight animated">
+               <h2>Заголовок слайдера #3</h1>
+               <h3>Маленький заголовок слайдера #3</h3>
+             </hgroup>
+             <button class="btn btn-hero btn-lg" role="button">Кнопка</button>
+           </div>
+         </div>
+       </div>
+     </div>
 
-<!--Создаём ячейку сайдбара-->
-<td bgcolor="#e6e6fa">
-<h3>Меню</h3>
-<!--Абзац для ссылки на страницу сайта-->
-<p>
-<!--Ссылка на страницу сайта-->
-<a href="">
-<!--Картинка маркера перед названием страницы-->
-<img src="http://trueimages.ru/img/00/06/f4fffdb5.png">
-<!--Название страницы
-style="margin-left:5px;" - отступ названия от маркера-->
-<span style="margin-left:5px;">Страница</span></a>
-<!--Закрываем абзац-->
-</p>
-<p>
-<a href="">
-<img src="http://trueimages.ru/img/31/ab/4dcb087c2ae4305edcd15171696.jpg">
-<span style="margin-left:5px;">Страница 1</span;></a>
-</p>
-<p>
-<a href="">
-<img src="http://trueimages.ru/img/31/ab/4dcb087c2ae4305edcd15171696.jpg">
-<span style="margin-left:5px;">Страница 2</span></a>
-</p>
-<!--Закрываем строку Меню-->
-</td>
-</tr>
-<!--Создаём строку с дополнительной информацией-->
-<tr>
-<!--Ячейка с дополнительной информацией-->
-<td
-bgcolor="#e6e6fa"
-align="center">
-<h3>Общая информация</h3>
-<p>Текст общей информации или реклама</p>
-<!--Закрываем ячейку с общей информацией
-и таблицу основного контента-->
-</td>
-</tr>
-</table>
+     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+       <span class="sr-only">Назад</span>
+     </a>
+     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+       <span class="sr-only">Вперёд</span>
+     </a>
+     </div>
 
-<!--ПОДВАЛ-->
+    </div>
+  </div>
+</section>
 
-<!--Создаём таблицу подвала-->
-<table
-border="1"
-bgcolor="#7FFFD4"
-height="100"
-cellpadding="10"
-style="width:100%; border-radius:5px;">
-<!--Создаём строку.-->
-<tr>
-<!--Создаём столбец-->
-<th>
-<h3>Подвал</h3>
-<!--Закрываем таблицу подвала. При желании в подвале можно
-сделать несколько строк и столбцов-->
-</th>
-</tr>
-</table>
-<!--Закрываем таблицу контейнера-->
-</td>
-</tr>
-</table>
+</section>
+
+<section id="advantage">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 text-center hero fadeInUp animated">
+        <img src="images/like.png" alt="">
+        <p>Гарантия<br/>качества</p>
+      </div>
+      <div class="col-md-3 text-center hero fadeInUp animated">
+        <img src="images/piggy-bank.png" alt="">
+        <p>Низкие<br/>цены</p>
+      </div>
+      <div class="col-md-3 text-center hero fadeInUp animated">
+        <img src="images/star.png" alt="">
+        <p>Лучшая<br/>продукция</p>
+      </div>
+      <div class="col-md-3 text-center hero fadeInUp animated">
+        <img src="images/phone-call.png" alt="">
+        <p>Всегда<br/>на связи</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1><span>Важный</span> текст о компании</h1>
+        <p>
+          Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
+        </p>
+        <a href="/" id="btn-more">Подробнее</a>
+      </div>
+      <div class="col-md-6">
+        <img src="images/img.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="message">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2><span>Оставить</span> заявку</h2>
+         <form id="contact-form" method="post" action="contact.php" role="form">
+          <div class="messages"></div>
+           <div class="controls">
+             <div class="row">
+               <div class="col-md-6">
+                 <div class="form-group">
+                   <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Введите адрес электронной почты*" required="required" data-error="Требуется действующее электронное письмо.">
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+               <div class="col-md-6">
+                 <div class="form-group">
+                   <label for="form_phone">Телефон</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Введите свой телефон">
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-md-12">
+                 <div class="form-group">
+                   <label for="form_message">Сообщение *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Напишите нам" rows="4" required="required" data-error="Пожалуйста, оставьте нам сообщение."></textarea>
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+               <div class="col-md-12 text-center">
+                  <input type="submit" id="button_contacts" value="Отправить">
+               </div>
+             </div>
+           </div>
+         </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-left hidden-xs">
+          <div id="copyright">
+            <p id="copyright-block">© Copyright</p>
+          </div>
+        </div>
+        <div class="col-md-6 text-right">
+          <!-- 
+		       Если хотите удалить ссылку, то пожертвуйте любую сумму денег 
+               на странице шаблона 
+			   https://obninsksite.ru/free-template/universal-template 
+			   
+		  -->
+          <p id="develop"><a href="https://obninsksite.ru/" target="_blank">Разработка сайта <span>OS</span></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="js/bootstrap.js"></script>	
 </body>
 </html>
